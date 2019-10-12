@@ -1,0 +1,55 @@
+/*
+Theme Name: Con Altura
+Author: Matt Peterse
+Author URI: https://madebymp.com/
+Description: Custom theme for Rosalia
+Version: 1.0
+*/
+
+html { height: 100%; margin: 0; }
+body { min-height: 100%; margin: 0; font-family: 'EB Garamond', serif; }
+body.admin-bar { margin-top: 0 !important; }
+
+[class*="lang-"] { display: none; }
+
+.menu-location { position: fixed; }
+.menu-location.menu-location-top { top: 20px; }
+body.admin-bar .menu-location.menu-location-top { top: 50px; }
+.menu-location.menu-location-bottom { bottom: 20px; }
+.menu-location.menu-location-left { left: 20px; }
+.menu-location.menu-location-center { left: 50%; width: 100px; margin-left: -50px; text-align: center; }
+.menu-location.menu-location-right {right: 20px;}
+.menu-location > .menu { list-style: none; padding: 0; margin: 0; text-transform: uppercase; font-weight: bold; font-size: 18px; text-shadow: 1px 1px 1px #96803d; letter-spacing: 1px; }
+.menu-location > .menu > .menu-item { display: inline-block; }
+.menu-location > .menu > .menu-item > a { color: #FFF; text-decoration: none; }
+.menu-location > .menu > .menu-item > a:hover { text-decoration: underline; }
+
+.page-header { text-align: center; padding-top: 10px; }
+.page-header img { position: relative; z-index: 100; display: inline-block; max-height: 100px; max-width: 80%; }
+.posts { width: 1000px; max-width: 100%; margin: auto; }
+.posts.posts-scroll { position: absolute; left: 200px; right: 200px; top: 80px; bottom: 50px; width: auto; padding: 40px; padding-top: 20px; border: 5px solid transparent; outline: 3px solid rgba(255, 255, 255, 0.3); border-radius: 3px; overflow-y: scroll; }
+.posts.posts-scroll::-webkit-scrollbar { width: 10px; }
+.posts.posts-scroll::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.2); }
+.posts.posts-scroll::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.3); }
+.posts.posts-scroll::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.5); }
+.posts .post { color: #FFF; padding-bottom: 50px; }
+.posts .post h1 { font-size: 26px; text-transform: uppercase; text-shadow: 1px 1px 1px #96803d; margin-top: 0; text-align: center; letter-spacing: 1px; }
+.posts .post a { color: #FFF; text-shadow: 1px 1px 1px #96803d; letter-spacing: 1px; }
+.posts .post a:hover { text-decoration: underline; }
+.posts .post p { margin-top: 0; line-height: 20px; font-weight: bold; }
+.posts .post p:last-child { margin-bottom: 0; }
+.posts .post iframe[src*="youtube"] { width: 75%; display: block; margin: auto; border: 2px solid #96803d; background-color: #111; }
+.posts .post img { height: auto; }
+
+@media(max-width: 1200px) {
+    .posts.posts-scroll { left: 100px; right: 100px; padding: 30px; }
+}
+@media(max-width: 1000px) {
+    .posts.posts-scroll { left: 50px; right: 50px; padding: 20px; }
+}
+@media(max-width: 800px) {
+    .page-header { padding-top: 50px; }
+    .posts { margin-top: 30px; }
+    .posts.posts-scroll { left: 10px; right: 10px; padding: 10px; }
+    .posts .post figure.wp-block-embed { margin-left: 10px; margin-right: 10px; }
+}
